@@ -1,0 +1,98 @@
+<div class="main">
+  <!--<aside [class.collapsed]="sidebarCollapsed" class="dashboard-sidebar">
+    <button (click)="toggleSidebar()" class="sidebar-toggle" style="background-color: transparent;">
+      <span *ngIf="sidebarCollapsed"><img alt="" src="assets/image/next.png" style="height: 15px;
+    position: absolute;"></span>
+      <span *ngIf="!sidebarCollapsed"><img alt="" src="assets/image/back.png" style="height: 15px;
+    position: absolute;"></span>
+    </button>
+
+    <div *ngIf="isSidebarClosed" class="app-name">{{ appName }}</div>
+    <div *ngIf="show" class="sidebar-content">
+      <ul class="list">
+        <li><a [routerLink]="['/dashboard']">Home</a></li>
+        <li><a [routerLink]="['/search']">Search</a></li>
+        <li><a [routerLink]="['/suggest']">Suggestions</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </div>
+    <img *ngIf="!isSidebarClosed" alt="" src="assets/image/midway.png" style="width: 100px;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;">
+    <img *ngIf="isSidebarClosed" alt="" src="assets/image/mlogo.png" style="width: 30px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;">
+  </aside>-->
+
+  <div class="sideBarnew">
+
+    <img alt="" src="./assets/image/pngegg (1).png" style="width: 60%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;">
+
+
+    <div style="margin-top: 50px;position: absolute;left: -15px;">
+      <ul style="list-style-type: none;position: absolute;left: -7px;">
+        <li class="hh"><a [routerLink]="['/dashboard']"><img alt=""
+                                                             class="liImag" src="./assets/image/home-icon-silhouette.png"></a>
+        </li>
+        <li><a [routerLink]="['/search']"><img alt="" class="liImag" src="./assets/image/magnifier.png"></a></li>
+        <li><a [routerLink]="['/suggest']"><img alt="" class="liImag" src="./assets/image/question.png"></a></li>
+        <!--      <li><a (click)="openLogoutConfirmation()"><img class="liImag" src="./assets/image/home-icon-silhouette.png" alt=""></a></li>-->
+
+      </ul>
+    </div>
+    <div style="position: absolute;
+    bottom: 20px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    width: 25px;
+    height: 25px;
+    border-radius: 100px; ">
+
+
+      <a [routerLink]="['/']">
+        <img alt="" src="./assets/image/padlock.png" style="width: 50%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;">
+      </a>
+    </div>
+
+  </div>
+
+  <div class="suggested-places">
+    <h2 class="title">Suggested Traveling Places</h2>
+
+    <div class="mainDiv">
+      <div>
+        <button (click)="restaurents()" class="my-button-class">Hotels</button>
+        <button (click)="agents()" class="my-button-class">View points</button>
+        <button (click)="sports()" class="my-button-class">Museum</button>
+        <button (click)="spa()" class="my-button-class">Art works</button>
+      </div>
+
+      <div *ngIf="show1" style="position: relative;width: 100%;height: 85%;">
+        <img alt="" src="./assets/image/notfound.webp" style="width: 100%;height: 100%;">
+      </div>
+
+      <div (click)="handleDivClick(i)" *ngFor="let place of places let i = index" class="place-card hover">
+        <img alt="" src="assets/image/navIcon.jpg">
+        <h3>{{ place.Name }}</h3>
+        <p>{{ place.Class}}</p>
+        <p>{{ place.Type }}</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+

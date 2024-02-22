@@ -1,6 +1,6 @@
-# MidwayTravelers
+# MidwayTravels
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
 
 ## Development server
 
@@ -25,3 +25,19 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Installations
+
+
+1. Google Slides:
+
+```shell
+https://docs.google.com/presentation/d/1iSgygL83SkrU5bjJkQ79aQS3OyegOO6nbzpvmk2ts9I/edit?usp=sharing
+```
+
+2. Chat GPT:
+
+```shell
+https://shareg.pt/pjwuBiA
+```

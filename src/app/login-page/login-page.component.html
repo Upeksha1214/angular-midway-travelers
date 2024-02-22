@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+<div>
+  <img alt=""
+       src="./assets/image/young-shirtless-male-with-backpack-standing-mountain-taking-picture-cloudy-sky.jpg" style="height: 100vh;
+    width: 100%;">
+
+  <a href="#">
+    <img alt="" src="./assets/image/pngegg.png" style="position: absolute;
+    left: 10px;
+    width: 15%;
+}">
+  </a>
+  <div class="knight-rider">
+    <h2 style="position: absolute;
+    top: 50%;
+    left: 20px;
+    font-size: 20px;
+    color: white;">{{ knightRiderText }}</h2>
+
+  </div>
+
+  <div class="signup-container">
+    <h2 style="text-align: center">Welcome Back!</h2>
+    <p style="text-align: center">It's great to see you again! Pick up where you left off last time.</p>
+    <form (ngSubmit)="goToDashPage()" [formGroup]="signup">
+      <div class="form-group">
+        <label for="name" style="display: block;">User Name</label>
+        <input class="input" formControlName="name" id="name" name="name" required type="text">
+      </div>
+      <div class="form-group">
+        <label for="password" style="display: block;">Password</label>
+        <input class="input" formControlName="password" id="password" name="password" required type="password">
+      </div>
+      <button class="signup-button" type="submit">Log in</button>
+      <p>No account? <a [routerLink]="['/signup']">Sign up</a></p>
+    </form>
+  </div>
+</div>
+
+</body>
+
+</html>

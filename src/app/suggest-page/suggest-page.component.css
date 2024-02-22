@@ -1,0 +1,214 @@
+.suggested-places {
+  padding: 20px;
+  position: relative;
+  top: 0;
+  left: 322px;
+}
+
+.place-card {
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  /* margin-bottom: 20px; */
+  margin: auto;
+  width: 70%;
+  left: 0;
+  right: 0;
+  margin-bottom: 25px;
+}
+
+.place-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.place-card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.place-card p {
+  font-size: 14px;
+}
+.dashboard-sidebar {
+  background-color: white;
+  width: 180px;
+  position: fixed;
+  transition: width 0.3s ease;
+  min-height: 97vh;
+  border: 1px solid;
+  border-radius: 20px;
+}
+
+.dashboard-sidebar.collapsed {
+  width: 50px;
+}
+
+
+.sidebar-toggle {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-toggle:hover {
+  background-color: #e6e6e6;
+}
+
+.sidebar-toggle span {
+  margin-left: 5px;
+}
+
+.sidebar-content {
+  padding: 20px;
+}
+
+.sidebar-content h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.sidebar-content p {
+  margin-bottom: 10px;
+}
+
+.sidebar-content a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.sidebar-content a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+.main{
+  overflow: hidden;
+  background-color: #f2f2f2;
+  height: 100vh;
+
+  background-image: url('src/assets/image/beach.jpg'); /* Replace 'image.jpg' with your image URL */
+  background-size: cover; /* Adjust the background size */
+  background-position: center;
+}
+
+.mainDiv{
+  position: relative;
+  border: 1px solid;
+  border-radius: 20px;
+  width: 65%;
+  padding: 30px;
+  background-color: white;
+  height: 75vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(0px);
+}
+
+.hover {
+  transition: transform 0.3s, background-color 0.3s;
+}
+.hover:hover {
+  transform: scale(1.05);
+  background-color: #FFFF8A;
+
+}
+
+
+.mainDiv::-webkit-scrollbar {
+  width: 8px;
+  /* Width of the scrollbar */
+}
+
+.mainDiv::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background color of the scrollbar track */
+}
+
+.mainDiv::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar thumb */
+}
+
+.mainDiv::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the scrollbar thumb on hover */
+}
+
+.title{
+  color: #1F2937;
+  font-weight: 800;
+  display: inline;
+  line-height: 40px;
+  font-family: "Inter", sans-serif;
+}
+
+.my-button-class {
+  background-color: #ff3366; /* Set the background color */
+  color: #ffffff; /* Set the text color */
+  border: none; /* Remove the border */
+  padding: 10px 20px; /* Set the padding */
+  border-radius: 25px; /* Increase the border radius for a more round shape */
+  font-size: 16px; /* Set the font size */
+  margin: 10px;
+}
+
+.my-button-class:hover {
+  background-color: #ff9999; /* Set the background color on hover */
+  cursor: pointer; /* Set the cursor to a pointer on hover */
+}
+
+.list {
+  color: #1F2937;
+  font-weight: 800;
+
+  line-height: 40px;
+  font-family: "Inter", sans-serif;
+
+}
+
+.app-name {
+  writing-mode: vertical-rl;
+  transform: rotate(-180deg);
+  position: absolute;
+  top: 59%;
+  left: 33px;
+  transform-origin: top left;
+  font-size: 20px;
+  font-weight: bold;
+  color: #6366F1;
+  transition: opacity 0.3s ease;
+}
+
+
+.sideBarnew {
+  width: 80px;
+  height: 90%;
+  left: 15px;
+  top: 0;
+   background-color: white;
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+  border: 1px solid;
+  border-radius: 25px;
+}
+
+
+.liImag {
+  width: 60%;
+  margin-top: 30px;
+  padding: 15px;
+  border-radius: 20px
+}
+
+.liImag:hover {
+  background-color: #A7A5FF;
+}
+

@@ -1,0 +1,49 @@
+<div>
+  <img alt="" src="./assets/image/pexels-genine-alyssa-pedrenoandrada-2932486.jpg" style="height: 100vh;
+    width: 100%;">
+
+  <a href="#">
+    <img alt="" src="./assets/image/pngegg.png" style="position: absolute;
+    left: 10px;
+    width: 15%;
+}">
+  </a>
+
+  <div class="basicDiv">
+    <div style="position: relative;
+    right: -60%;
+    top: 35%;">
+      <h2 style="    color: white;
+    font-size: 25px;">Already have an account?</h2>
+      <a class="btn11" href="/login">
+        Log in
+      </a>
+    </div>
+  </div>
+  <div class="secondBasic">
+    <h2 style="position: relative;
+    top: 25%;
+    right: -30px;color: #45a049">Lets get started</h2>
+    <form (ngSubmit)="submitSignup()" [formGroup]="signup" style="width: 80%;
+    position: relative;
+    top: 25%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input formControlName="name" id="name" name="name" required type="text">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input formControlName="email" id="email" name="email" required type="email">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input formControlName="password" id="password" name="password" required type="password">
+      </div>
+      <button class="signup-button" type="submit">Sign Up</button>
+    </form>
+  </div>
+</div>

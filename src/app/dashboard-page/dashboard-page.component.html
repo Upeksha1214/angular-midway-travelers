@@ -1,0 +1,131 @@
+<div class="dashboard-wrapper">
+  <!--<aside [class.collapsed]="sidebarCollapsed" class="dashboard-sidebar">
+    <button (click)="toggleSidebar()" class="sidebar-toggle" style="background-color: transparent;">
+      <span *ngIf="sidebarCollapsed"><img alt="" src="assets/image/next.png" style="height: 15px;
+    position: absolute;"></span>
+      <span *ngIf="!sidebarCollapsed"><img alt="" src="assets/image/back.png" style="height: 15px;
+    position: absolute;"></span>
+    </button>
+
+    <div *ngIf="isSidebarClosed" class="app-name">{{ appName }}</div>
+
+
+    &lt;!&ndash;<div *ngIf="show" class="sidebar-content">
+      <ul class="list">
+        <li><a [routerLink]="['/dashboard']">Home</a></li>
+        <li><a [routerLink]="['/search']">Search</a></li>
+        <li><a [routerLink]="['/suggest']">Suggestions</a></li>
+        <li><a (click)="openLogoutConfirmation()">Logout</a></li>
+      </ul>
+    </div>&ndash;&gt;
+
+
+
+
+
+
+    <img *ngIf="!isSidebarClosed" alt="" src="assets/image/midway.png" style="width: 100px;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;">
+    <img *ngIf="isSidebarClosed" alt="" src="assets/image/mlogo.png" style="width: 30px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;">
+  </aside>-->
+
+  <div class="sideBarnew">
+
+    <img alt="" src="./assets/image/pngegg (1).png" style="width: 60%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;">
+
+
+    <div style="margin-top: 50px;position: absolute;left: -15px;">
+      <ul style="list-style-type: none;position: absolute;left: -7px;">
+        <li class="hh"><a [routerLink]="['/dashboard']"><img alt=""
+                                                             class="liImag" src="./assets/image/home-icon-silhouette.png"></a>
+        </li>
+        <li><a [routerLink]="['/search']"><img alt="" class="liImag" src="./assets/image/magnifier.png"></a></li>
+        <li><a [routerLink]="['/suggest']"><img alt="" class="liImag" src="./assets/image/question.png"></a></li>
+        <!--      <li><a (click)="openLogoutConfirmation()"><img class="liImag" src="./assets/image/home-icon-silhouette.png" alt=""></a></li>-->
+
+      </ul>
+    </div>
+    <div style="position: absolute;
+    bottom: 20px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    width: 25px;
+    height: 25px;
+    border-radius: 100px; ">
+
+
+      <a [routerLink]="['/']">
+        <img alt="" src="./assets/image/padlock.png" style="width: 50%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;">
+      </a>
+    </div>
+
+  </div>
+
+
+  <main class="dashboard-content">
+    <div class="dashboard-content-inner">
+
+      <div class="attractive-div">
+        <img alt="" src="./assets/image/follower.png" style="position: absolute;
+    width: 80px;">
+        <h2 class="title">Hello <span style="color: #3366cc">{{name}}</span> Welcome to the Midway Travelers!</h2><br>
+        <p class="detail">This is the dashboard content area where you can display various information and
+          components.</p>
+      </div>
+
+      <div class="extra">
+        <div class="activity">
+          <h3 class="fontstyle">Recent Activity</h3>
+          <img alt="" src="assets/image/restore.png" style="    width: 50px;
+    color: white;
+    position: relative;
+    margin: auto;
+    left: 105px;">
+          <div class="blurDiv">
+            <p class="small">Your recent search place is {{pname}} <br>Its type is {{type}}</p>
+          </div>
+        </div>
+
+        <div class="activity">
+          <h3 class="fontstyle">Notifications</h3>
+          <img alt="" src="assets/image/notification.png" style="    width: 50px;
+    color: white;
+    position: relative;
+    margin: auto;
+    left: 105px;">
+          <p class="small"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="attractive-div" style="    position: absolute;
+    bottom: 25px;
+    width: 73%;
+    right: 88px;">
+      <img alt="" src="./assets/image/sun.png" style="position: absolute;
+    width: 80px;">
+      <h2 class="title">Dr <span style="color: #3366cc">{{name}}</span> Enjoy using Midway Travelers!</h2><br>
+      <p class="detail">This is the official webpag where you can find places.</p>
+    </div>
+
+  </main>
+
+</div>
+
