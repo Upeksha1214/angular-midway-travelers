@@ -1,0 +1,47 @@
+<div class="dashboard-wrapper">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <img src="./assets/image/pngegg (1).png" alt="Logo" class="sidebar-logo">
+        <ul class="sidebar-menu">
+            <li><a [routerLink]="['/dashboard']"><img src="./assets/image/home-icon-silhouette.png" alt="Home"></a></li>
+            <li><a [routerLink]="['/search']"><img src="./assets/image/magnifier.png" alt="Search"></a></li>
+            <li><a [routerLink]="['/suggest']"><img src="./assets/image/question.png" alt="Suggest"></a></li>
+            <li><a [routerLink]="['/edit-profile']"><img src="./assets/image/edit-profile.png" alt="Edit Profile"></a></li>
+        </ul>
+        <a [routerLink]="['/']" class="logout-link">
+            <img src="./assets/image/padlock.png" alt="Logout" class="logout-icon">
+        </a>
+    </div>
+
+    <!-- Main content -->
+    <main class="dashboard-content">
+        <div class="welcome-section">
+            <img src="./assets/image/follower.png" alt="Follower" class="welcome-icon">
+            <h2 class="welcome-title">Hello <span class="name-highlight">{{name}}</span>, Update your Profile!</h2>
+            
+        </div>
+
+        <form (ngSubmit)="submitSignup()" [formGroup]="signup" class="signup-form">
+            <h2>Edit Profile</h2>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input formControlName="name" id="name" name="name" required type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input formControlName="email" id="email" name="email" required type="email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input formControlName="password" id="password" name="password" required type="password" class="form-control">
+            </div>
+            <button class="signup-button" type="submit">Update</button>
+        </form>
+
+        <!-- <div class="welcome-footer">
+            <img src="./assets/image/sun.png" alt="Sun" class="welcome-icon">
+            <h2 class="welcome-title">Dr <span class="name-highlight">{{name}}</span>, Enjoy using Midway Travelers!</h2>
+            <p class="welcome-detail">This is the official webpage where you can find places.</p>
+        </div> -->
+    </main>
+</div>

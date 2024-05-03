@@ -1,0 +1,114 @@
+.dashboard-wrapper {
+    display: flex;
+}
+
+.sidebar {
+    width: 50px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar-logo {
+    width: 60%; /* Adjust the width to your preference */
+    margin: 20px auto;
+    display: block;
+}
+
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    margin-bottom: 20px;
+}
+
+.sidebar-menu li a {
+    display: block;
+}
+
+.sidebar-menu li a img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.logout-link {
+    display: block;
+    margin-top: 20px;
+}
+
+.logout-icon {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+.dashboard-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.welcome-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.welcome-icon {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.welcome-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.name-highlight {
+    color: #6366F1;
+}
+
+.welcome-detail {
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.signup-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signup-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #6366F1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.signup-button:hover {
+    background-color: #4F46E5;
+}
+
+.welcome-footer {
+    text-align: center;
+    margin-top: 40px;
+}

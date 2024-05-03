@@ -8,9 +8,9 @@ import {FormControl, ɵValue} from "@angular/forms";
 })
 export class LoginServiceService {
 
-  // sUrl = "http://127.0.0.1:5000/"
+  sUrl = "http://127.0.0.1:5000/"
 
-  sUrl = "http://18.234.162.76/"
+  //sUrl = "http://18.234.162.76/"
 
   constructor(private http: HttpClient) { }
 

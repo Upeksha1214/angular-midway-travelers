@@ -7,8 +7,8 @@ import {environment} from "../../environments/environment";
   providedIn: 'root'
 })
 export class SignupService {
-  // sUrl = "http://127.0.0.1:5000/"
-  sUrl = "http://18.234.162.76/"
+  sUrl = "http://127.0.0.1:5000/"
+  //sUrl = "http://18.234.162.76/"
   constructor(private http: HttpClient) { }
 
   signup(name: any, email: any, password: any) {

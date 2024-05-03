@@ -8,8 +8,8 @@ import {Observable} from "rxjs";
 })
 export class SuggestService {
 
-  // apiUrl = "http://127.0.0.1:5000/"
-  apiUrl = "http://18.234.162.76/"
+  apiUrl = "http://127.0.0.1:5000/"
+  //apiUrl = "http://18.234.162.76/"
 
   constructor(private http: HttpClient) {}
 

@@ -21,7 +21,7 @@ export class SearchPlacesComponent implements OnInit {
   constructor(private suggestService: SuggestService) { }
 
   ngOnInit(): void {
-    //this.getTravellPlaces();
+    this.getTravellPlaces();
   }
 
   inputValue: string = '';

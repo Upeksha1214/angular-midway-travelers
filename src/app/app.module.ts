@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SearchPlacesComponent } from './search-places/search-places.component';
 import { LogoutComponent } from './logout/logout.component';
+import { EditProfileComponent } from './edit-profile/edit-profile.component';
 
 // @ts-ignore
 @NgModule({
@@ -24,7 +25,8 @@ import { LogoutComponent } from './logout/logout.component';
     DashboardPageComponent,
     SuggestPageComponent,
     SearchPlacesComponent,
-    LogoutComponent
+    LogoutComponent,
+    EditProfileComponent
   ],
   imports: [
     BrowserModule,

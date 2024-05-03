@@ -6,6 +6,8 @@ import {SignupPageComponent} from "./signup-page/signup-page.component";
 import {SuggestPageComponent} from "./suggest-page/suggest-page.component";
 import {DashboardPageComponent} from "./dashboard-page/dashboard-page.component";
 import {SearchPlacesComponent} from "./search-places/search-places.component";
+import { EditProfileComponent } from './edit-profile/edit-profile.component';
+
 
 const routes: Routes = [
   { path: '', component: WelcomePageComponent },
@@ -14,6 +16,9 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardPageComponent },
   { path: 'suggest', component: SuggestPageComponent },
   { path: 'search', component: SearchPlacesComponent },
+  { path: 'edit-profile', component: EditProfileComponent },
+ 
+
   // Other routes...
 ];
 
